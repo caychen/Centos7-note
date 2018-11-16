@@ -19,7 +19,7 @@ tar -xvf rabbitmq-server-generic-unix-3.6.15.tar
 
 ```
 export RABBIT_HOME=/usr/local/rabbitmq/rabbitmq_server-3.6.15
-exoprt PATH=$PATH:$RABBIT_HOME/sbin
+export PATH=$PATH:$RABBIT_HOME/sbin
 ```
 
 ​	4）、配置生效
