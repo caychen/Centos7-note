@@ -16,7 +16,7 @@ tar -zxfv ruby-2.5.1.tar.gz
 
 ```
 cd ruby-2.5.1
-./configure 
+./configure --with-openssl-dir=/usr/local/ssl
 make && make install
 ```
 
