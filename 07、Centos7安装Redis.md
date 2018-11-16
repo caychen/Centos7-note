@@ -93,7 +93,7 @@ port 7001		# 修改：需要指定每个redis的端口号
 daemonize yes
 appendonly yes
 cluster-enabled yes
-cluster-config-file nodes-7001.conf		#修改：具体端口号的700x
+cluster-config-file /usr/local/redis/redis-cluster/7001/nodes-7001.conf		#修改：具体端口号的700x
 cluster-node-timeout 15000
 ```
 
