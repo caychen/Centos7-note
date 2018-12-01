@@ -1,5 +1,9 @@
 ## Centos7安装lrzsz
 
+```
+yum -y install lrzsz
+```
+
 lrzsz用于使用SecureCRT的时候，输入命令即可实现上传/下载的功能。
 
 ```
