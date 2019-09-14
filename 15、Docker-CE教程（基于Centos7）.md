@@ -53,7 +53,7 @@ sudo systemctl start docker
 
 #### 2.1、登录阿里云管理控制台
 
-![](.\images\容器镜像服务.png)
+![](images\容器镜像服务.png)
 
 
 
@@ -73,7 +73,7 @@ sudo systemctl restart docker
 
 ### 3、Hello World
 
-![](.\images\hello-world.PNG)
+![](images\hello-world.PNG)
 
 
 
@@ -88,7 +88,7 @@ sudo systemctl restart docker
 
 
 
-![](.\images\images1.PNG)
+![](images\images1.PNG)
 
 
 
@@ -96,19 +96,19 @@ sudo systemctl restart docker
 
   * -a：列出本机所有的镜像，包括中间映像层
 
-  ![](.\images\images2.PNG)
+  ![](images\images2.PNG)
 
   * -q：只显示镜像ID
 
-  ![](.\images\images3.PNG)
+  ![](images\images3.PNG)
 
   * --digests：显示镜像的摘要信息
 
-  ![](.\images\images4.PNG)
+  ![](images\images4.PNG)
 
   * --no-trunc：显示完整的镜像信息
 
-  ![](.\images\images5.PNG)
+  ![](images\images5.PNG)
 
 
 
@@ -119,7 +119,7 @@ sudo systemctl restart docker
 	docker search [OPTIONS] TERM
 ```
 
-![](.\images\search1.PNG)
+![](images\search1.PNG)
 
 
 
@@ -127,7 +127,7 @@ sudo systemctl restart docker
 
   * -filter=stars=30：过滤掉stars小于30的镜像，即只显示stars大于或者等于30的镜像
 
-  ![](.\images\search2.PNG)
+  ![](images\search2.PNG)
 
 
 
@@ -138,7 +138,7 @@ sudo systemctl restart docker
 	docker pull [OPTIONS] NAME[:TAG|@DIGEST]
 ```
 
-![](.\images\pull.PNG)
+![](images\pull.PNG)
 
 
 
@@ -151,19 +151,19 @@ sudo systemctl restart docker
 
 * 删除单个镜像
 
-![](.\images\rmi1.PNG)
+![](images\rmi1.PNG)
 
 
 
 * 删除多个镜像
 
-![](.\images\rmi2.PNG)
+![](images\rmi2.PNG)
 
 
 
 * 删除全部镜像
 
-![](.\images\rmi3.PNG)
+![](images\rmi3.PNG)
 
 
 
@@ -174,15 +174,15 @@ sudo systemctl restart docker
 	docker run [OPTIONS] IMAGE [COMMAND] [ARG...]
 ```
 
-![](.\images\run1.PNG)
+![](images\run1.PNG)
 
 * 常用选项：
 
   * --name：指定容器的名字，默认docker会自动创建一个名字作为容器名
 
-  ![](.\images\run2.PNG)
+  ![](images\run2.PNG)
 
-  ![](.\images\run3.PNG)
+  ![](images\run3.PNG)
 
   * -d / --detach：在后台运行容器
   * -i：以交互模式运行容器，通常与-t同时使用
@@ -203,25 +203,25 @@ sudo systemctl restart docker
 	docker ps [OPTIONS]
 ```
 
-![](.\images\ps1.PNG)
+![](images\ps1.PNG)
 
 * 常用选项：
 
   * -a：列出所有运行中的容器及之前运行的容器（当前已停止的容器）
 
-  ![](.\images\ps2.PNG)
+  ![](images\ps2.PNG)
 
   * -l：列出上一个容器，包含所有状态的容器
 
-  ![](.\images\ps3.PNG)
+  ![](images\ps3.PNG)
 
   * -n xxx：列出最新的xxx个容器，包含所有状态的容器
 
-  ![](.\images\ps4.PNG)
+  ![](images\ps4.PNG)
 
   * -q：只列出容器的ID
 
-  ![](.\images\ps5.PNG)
+  ![](images\ps5.PNG)
 
 
 
@@ -229,11 +229,11 @@ sudo systemctl restart docker
 
 * （1）、exit：容器停止退出
 
-![](.\images\exit1.PNG)
+![](images\exit1.PNG)
 
 * （2）、ctrl+P+Q：容器不停止退出
 
-![](.\images\exit2.PNG)
+![](images\exit2.PNG)
 
 
 
@@ -244,7 +244,7 @@ sudo systemctl restart docker
 	docker start [OPTIONS] CONTAINER [CONTAINER...]
 ```
 
-![](.\images\start.PNG)
+![](images\start.PNG)
 
 
 
@@ -257,7 +257,7 @@ stop：会安静的慢慢停止容器
 	docker stop [OPTIONS] CONTAINER [CONTAINER...]
 ```
 
-![](.\images\stop.PNG)
+![](images\stop.PNG)
 
 
 
@@ -268,7 +268,7 @@ stop：会安静的慢慢停止容器
 	docker restart [OPTIONS] CONTAINER [CONTAINER...]
 ```
 
-![](.\images\restart.PNG)
+![](images\restart.PNG)
 
 
 
@@ -281,7 +281,7 @@ kill：会直接将容器停止，比stop快
 	docker kill [OPTIONS] CONTAINER [CONTAINER...]
 ```
 
-![](.\images\kill.PNG)
+![](images\kill.PNG)
 
 
 
@@ -294,15 +294,15 @@ kill：会直接将容器停止，比stop快
 
 删除单个容器：
 
-![](.\images\rm1.PNG)
+![](images\rm1.PNG)
 
 删除多个容器；
 
-![](.\images\rm2.PNG)
+![](images\rm2.PNG)
 
 强制删除运行中的容器：
 
-![](.\images\rm3.PNG)
+![](images\rm3.PNG)
 
 
 
@@ -313,7 +313,7 @@ kill：会直接将容器停止，比stop快
 	docker inspect [OPTIONS] NAME|ID [NAME|ID...]
 ```
 
-![](.\images\inspect.PNG)
+![](images\inspect.PNG)
 
 
 
@@ -324,7 +324,7 @@ kill：会直接将容器停止，比stop快
 	docker top CONTAINER [ps OPTIONS]
 ```
 
-![](.\images\top.PNG)
+![](images\top.PNG)
 
 
 
@@ -350,8 +350,8 @@ exec语法：
 
 从docker容器中往外拷贝
 
-![](.\images\cp1.PNG)
+![](images\cp1.PNG)
 
 从外往docker容器中拷贝
 
-![](.\images\cp2.PNG)
+![](images\cp2.PNG)
