@@ -36,7 +36,7 @@ sudo yum-config-manager --enable docker-ce-nightly
 ```
 
 ```
-sudo yum install docker-ce docker-ce-cli containerd.io
+sudo yum -y install docker-ce docker-ce-cli containerd.io
 ```
 
 
@@ -62,12 +62,14 @@ sudo systemctl start docker
 ```
 sudo tee /etc/docker/daemon.json <<-'EOF'
 {
-  "registry-mirrors": ["https://vew9z43d.mirror.aliyuncs.com"]
+  "registry-mirrors": ["https://xxxxxx.mirror.aliyuncs.com"]
 }
 EOF
 sudo systemctl daemon-reload
 sudo systemctl restart docker
 ```
+
+xxxx：请设置为自己的阿里云镜像地址
 
 
 
