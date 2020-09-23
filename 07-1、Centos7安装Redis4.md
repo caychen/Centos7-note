@@ -1,4 +1,4 @@
-## Centos7安装Redis
+## Centos7安装Redis4
 
 以Redis-4.0.9为例。
 
@@ -93,7 +93,8 @@ port 7001		# 修改：需要指定每个redis的端口号
 daemonize yes
 appendonly yes
 cluster-enabled yes
-cluster-config-file /usr/local/redis/redis-cluster/7001/nodes-7001.conf		#修改：具体端口号的700x
+cluster-config-file /usr/local/redis/redis-cluster/7001/redis.conf		#修改：具体端口号的700x
+pidfile /var/run/redis_7001.pid		#修改
 cluster-node-timeout 15000
 ```
 
