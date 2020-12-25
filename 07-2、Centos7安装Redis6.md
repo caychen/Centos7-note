@@ -21,7 +21,7 @@ tar xzf redis-6.0.8.tar.gz
 ​	（3）、进入redis目录，进行编译
 
 ```
-make
+make MALLOC=libc
 ```
 
 ​	（4）、make 命令遇到如下错误或者编译过程中出现错误:表示c的编译环境不可用或gcc版本太低,需要安装高版本的gcc(redis6.x需要高版本的gcc)，则需要
